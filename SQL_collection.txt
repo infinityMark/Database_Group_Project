@@ -20,3 +20,13 @@ SELECT (Check_OUT-Check_IN)*(SELECT Price FROM Room_Type WHERE RoomType = [R])+(
 FROM Rooms
 WHERE Rooms_ID = [RoomID]
 AND Hotel_ID = [H];
+
+--website account log in,user can see reservation information
+SELECT H.Name,H.Area,H.District,H.Address,RT.RoomType,RT.Bed_number,R.BookingStart,R.BookingEnd,RT.Price*(BookingEnd-BookingStart)
+FROM Cus_web_Account C, Reservation R, Hotels H,Room_Type RT
+WHERE C.AccountID = R.AccountID
+AND R.Hotel = H.Hotel_ID
+AND R.RoomType = RT.RoomType
+AND C.Email LIKE "form input"
+AND C.Password LIKE "form input";
+--
