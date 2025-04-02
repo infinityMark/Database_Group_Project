@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 --filter employees' Position
 select EmployeeID, LastName, FirstName
 from Employee
@@ -16,10 +15,8 @@ SELECT FirstName, LastName, RoomID,
 FROM customer
 WHERE IDcard = "Form input";
 
---show customer's total expendeture
-SELECT 
-FROM 
-WHERE 
-=======
-s
->>>>>>> 8988185c04ac95239689788faea477d1ccb21d9d
+--show customer's total expendeture SELECT (Check_OUT-Check_IN)
+SELECT (Check_OUT-Check_IN)*(SELECT Price FROM Room_Type WHERE RoomType = [R])+(SELECT Price FROM Service WHERE Service_ID = (select Service_ID from Orders group by RoomID) )AS "Total Expense"
+FROM Rooms
+WHERE Rooms_ID = [RoomID]
+AND Hotel_ID = [H];
