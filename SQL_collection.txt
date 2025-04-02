@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 --filter employees' Position
 select EmployeeID, LastName, FirstName
 from Employee
@@ -19,3 +20,6 @@ WHERE IDcard = "Form input";
 SELECT 
 FROM 
 WHERE 
+=======
+s
+>>>>>>> 8988185c04ac95239689788faea477d1ccb21d9d
