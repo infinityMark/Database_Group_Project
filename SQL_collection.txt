@@ -1,7 +1,7 @@
 --filter employees' Position
-select EmployeeID, LastName, FirstName
-from Employee
-where Position_ID = "form input";
+SELECT Employee.EmployeeID, Employee.LastName, Employee.FirstName
+FROM Employee
+WHERE (((Employee.[Position_ID])=[Forms]![Position]![input]));
 
 --filter employees' Department
 select E.EmployeeID, E.LastName, F.FirstName
