@@ -11,6 +11,7 @@
 > # Wu Jiacheng
 > # Github : infinityMark
 > # Email : jiachengwu14@gmail.com
+> # Corresponding for data structure design, table design, table normalization, SQL writing, and Interface optimization.
 
 ---
 
